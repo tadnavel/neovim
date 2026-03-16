@@ -3,7 +3,7 @@ return {
   version = "*",
   opts = {
     size = 15,
-    open_mapping = [[<C-\>]],
+    open_mapping = [[<A-t>]],
     hide_numbers = true,
     shade_terminals = true,
     shading_factor = 2,

@@ -15,11 +15,11 @@ return {
 
     keymap.set("n", "<leader>dc", dap.continue, { desc = "Continue" })
     keymap.set("n", "<leader>di", dap.step_into, { desc = "Step into" })
-    keymap.set("n", "<leader>do", dap.step_over, { desc = "Step over" })
+    keymap.set("n", "<leader>dn", dap.step_over, { desc = "Step over" })
     keymap.set("n", "<leader>dO", dap.step_out, { desc = "Step out" })
-    keymap.set("n", "<leader>dr", dap.repl.open, { desc = "Open REPL" })
-    keymap.set("n", "<leader>dl", dap.run_last, { desc = "Run last" })
     keymap.set("n", "<leader>dx", dap.terminate, { desc = "Terminate" })
+    keymap.set("n", "<leader>dl", dap.run_last, { desc = "Run last" })
+    keymap.set("n", "<leader>dr", dap.repl.open, { desc = "Open REPL" })
 
     -- Go config
     require("dap-go").setup({

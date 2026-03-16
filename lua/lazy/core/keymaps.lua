@@ -2,6 +2,7 @@ local map = vim.keymap.set
 local opts = { noremap = true, silent = true }
 
 vim.g.mapleader = ";"
+vim.g.maplocalleader = ","
 
 -- Exit terminal mode
 map("t", "<Esc>", "<C-\\><C-n><CR>", opts)
@@ -35,5 +36,9 @@ map("n", "[b", ":bprev<CR>", opts)
 -- Replace visual text
 map("v", "<C-r>", '"hy:%s/<C-r>h//gc<left><left><left>', opts)
 
--- Close buffer without exiting vim
-map("n", "<silent> <leader>bd", ":bp | sp | bn | bd<CR>", opts)
+-- Close buffer without exiting vimmm
+map("n", "<leader>bd", ":bp | sp | bn | bd<CR>", opts)
+
+-- scroll
+map("n", "<M-j>", "3<C-e>", opts)
+map("n", "<M-k>", "3<C-y>", opts)
