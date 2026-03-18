@@ -16,6 +16,7 @@ require("lazy").setup({
   { import = "lazy.plugins.tool" },
   { import = "lazy.plugins.editor" },
   { import = "lazy.plugins" },
+  { import = "lazy.plugins.git" },
   { import = "lazy.plugins.lsp" },
 }, {
   checker = {
