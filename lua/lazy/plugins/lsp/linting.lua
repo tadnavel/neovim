@@ -7,6 +7,7 @@ return {
     vim.env.PATH = vim.env.PATH .. ":" .. vim.fn.stdpath("data") .. "/mason/bin"
     lint.linters_by_ft = {
       go = { "golangcilint" },
+      dockerfile = { "hadolint" },
     }
 
     local lint_augroup = vim.api.nvim_create_augroup("lint", { clear = true })

@@ -29,6 +29,9 @@ return {
       ensure_installed = {
         "lua_ls",
         "gopls",
+        "dockerls", -- Dockerfile
+        "docker_compose_language_service", -- docker-compose.yml
+        "marksman",
       },
     })
 
@@ -39,6 +42,8 @@ return {
         "goimports", -- import manager
         "golangci-lint", -- linter
         "delve", -- Go debugger
+        "hadolint", -- Dockerfile
+        "prettier",
       },
     })
   end,

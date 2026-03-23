@@ -122,6 +122,26 @@ return {
           },
         })
       end,
+      ["dockerls"] = function()
+        lspconfig["dockerls"].setup({
+          capabilities = capabilities,
+        })
+      end,
+
+      -- Docker Compose LSP
+      ["docker_compose_language_service"] = function()
+        lspconfig["docker_compose_language_service"].setup({
+          capabilities = capabilities,
+          filetypes = { "yaml.docker-compose" },
+        })
+      end,
+
+      -- Markdown LSP
+      ["marksman"] = function()
+        lspconfig["marksman"].setup({
+          capabilities = capabilities,
+        })
+      end,
     })
   end,
 }

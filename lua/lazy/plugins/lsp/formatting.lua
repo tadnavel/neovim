@@ -7,6 +7,9 @@ return {
     conform.setup({
       formatters_by_ft = {
         lua = { "stylua" },
+        markdown = { "prettier" },
+        yaml = { "prettier" },
+        dockerfile = { "prettier" },
       },
       format_on_save = {
         lsp_fallback = true,
